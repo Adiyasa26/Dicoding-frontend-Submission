@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+/*///////////////////// Selector bebas /////////////////////*/
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+
+main {
+  margin-top: 60px;
+  width: 100%;
+  overflow: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', Times, serif;
+  background-color: #192133;
+}
+
+/*///////////////////// Efek global /////////////////////*/
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container-row {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+}
+
+.card {
+  background-color: #0c111b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 0px 0px 20px 0px;
+  margin: 15px;
+  flex-basis: 25%;
+}
+
+.card > img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card > p {
+  font-size: 15px;
+}
+
+.card-film {
+  background-color: #192133;
+}
+
+.card-film > img {
+  width: 100%;
+  max-height: 350px;
+}
+
+/*///////////////////// Header /////////////////////*/
+
+/*-----bagian navigator-----*/
+
+.jumbotron {
+  background-color: #192133;
+  padding: 5px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+nav {
+  background-color: #192133;
+
+  width: 100%;
+  padding: 5px;
+  position: fixed;
+
+  top: 0;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-left: 20px;
+}
+nav a {
+  font-size: 120%;
+  text-decoration: 0;
+  color: rgb(255, 196, 0);
+}
+
+nav a:hover {
+  font-weight: Bold;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  flex-basis: 60%;
+}
+
+.nav {
+  flex-basis: 40%;
+}
+
+.list {
+  flex-direction: row;
+  flex-basis: 5%;
+}
+
+/*///////////////////// Sistem Pop out /////////////////////*/
+
+/*-----bagian tombol-----*/
+.detail-cover {
+  margin-top: 20px;
+}
+
+.detail {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 10px;
+  margin: 2px 2px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #334366;
+  color: #192133;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-detail {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/*-----bagian pop out-----*/
+
+.pop-up {
+  text-align: left;
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 2px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.pop-up-cover {
+  color: black;
+  top: 70%;
+}
+
+.pop-up-film {
+  top: 170%;
+}
+
+.pop-up-serial {
+  top: 260%;
+}
+
+.pop-up-lokal {
+  top: 330%;
+}
+
+article > img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/*-----efek pendukung-----*/
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.detail:hover {
+  color: white;
+  background-color: rgb(255, 196, 0);
+}
+
+/*///////////////////// About /////////////////////*/
+
+.inside-cover {
+  padding: 0px 20px 5px 40px;
+  color: rgb(255, 196, 0);
+}
+
+.about > img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  object-position: center;
+  padding: 0px;
+}
+
+/*///////////////////// Spot /////////////////////*/
+
+.spot {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  background-color: #0c111b;
+}
+
+.spot > h2 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.film-spot-menu {
+  padding-left: 25px;
+}
+
+.film-spot-menu > h3 {
+  color: rgb(255, 196, 0);
+  font-size: 15px;
+}
+
+/*///////////////////// Aside /////////////////////*/
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-container {
+  flex-basis: 70%;
+}
+
+.aside {
+  text-align: center;
+  padding: 20px;
+  background-color: #0c111b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 15px;
+
+  flex-basis: 30%;
+}
+
+.aside > header > h2 {
+  color: rgb(255, 196, 0);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.aside > header > p {
+  color: white;
+}
+
+th {
+  text-align: right;
+  color: rgb(255, 196, 0);
+  font-weight: bold;
+}
+
+td {
+  text-align: left;
+  color: white;
+}
+
+.photo-profile {
+  max-width: 200px;
+  object-fit: center;
+}
+
+.table {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*///////////////////// Footer /////////////////////*/
+
+footer {
+  padding: 20px;
+  color: rgb(255, 196, 0);
+  background-color: #192133;
+  text-align: center;
+  font-weight: Bold;
+}
+
+/*///////////////////// Media Query /////////////////////*/
+
+/*-----Ukuran 1024-----*/
+
+@media screen and (max-width: 1024px) {
+  /*///////////////////// Navigator /////////////////////*/
+  nav {
+    padding: 0px;
+    right: 0px;
+  }
+
+  nav a {
+    font-size: 70%;
+  }
+
+  .list {
+    margin: 5px;
+  }
+
+  /*///////////////////// Popout /////////////////////*/
+  .pop-up {
+    padding: 10px;
+    width: 90%;
+    top: 10px;
+  }
+
+  .close-detail {
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+  }
+
+  .pop-up-cover {
+    color: black;
+    top: 50%;
+  }
+
+  .pop-up-film {
+    top: 300%;
+  }
+
+  .pop-up-serial {
+    top: 500%;
+  }
+
+  .pop-up-lokal {
+    top: 750%;
+  }
+}
+
+/*-----Ukuran 480-----*/
+
+@media screen and (max-width: 700px) {
+  /*///////////////////// Navigator /////////////////////*/
+  nav {
+    text-align: center;
+    padding-bottom: 5px;
+    padding-right: 17%;
+  }
+
+  nav a {
+    font-size: 40%;
+  }
+
+  .logo-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list {
+    margin: 5px;
+  }
+
+  /*///////////////////// Jumbotron /////////////////////*/
+  .jumbotron {
+    font-size: 30%;
+    top: 120px;
+    left: 50px;
+    transform: translate(-50px, -2px);
+  }
+
+  .image-home {
+    margin-top: 20%;
+  }
+
+  .flex-container-row {
+    flex-direction: column;
+  }
+
+  /*///////////////////// About /////////////////////*/
+  #container {
+    flex-direction: column;
+  }
+
+  /*///////////////////// Popout /////////////////////*/
+  .pop-up {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .close-detail {
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+  }
+
+  .pop-up-cover {
+    color: black;
+    top: 50%;
+  }
+
+  .pop-up-film {
+    top: 230%;
+  }
+
+  .pop-up-serial {
+    top: 420%;
+  }
+
+  .pop-up-lokal {
+    top: 620%;
+  }
+}
